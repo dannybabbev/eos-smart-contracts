@@ -1,10 +1,10 @@
 # eos-smart-contracts
 
-Training ground for the EOSIO hackathon in Hong Kong
+A training ground for the EOSIO hackathon in Hong Kong
 
 ## Getting Started
 
-**1. Make sure you have the latest version of EOSIO**
+**1. Make sure you have the latest version of EOSIO (That's optional if you have a recent version)** 
 
 ```
 cd eos
