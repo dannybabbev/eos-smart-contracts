@@ -4,7 +4,7 @@ Training ground for the EOSIO hackathon in Hong Kong
 
 ## Getting Started
 
-* Make sure you have the latest version of EOSIO 
+1. Make sure you have the latest version of EOSIO 
 
 ```
 cd eos
@@ -12,7 +12,7 @@ git fetch --recusrsive
 ./eosio_build.sh
 ```
 
-* Run the block producer
+2. Run the block producer
 
 ```
 cd build/programs/nodeos
