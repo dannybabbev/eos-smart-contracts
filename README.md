@@ -72,3 +72,5 @@ cleos push action eosio.token issue '[ "user", "100.0000 SHIT", "memo" ]' -p eos
 cleos push action eosio.token transfer '[ "user", "tester", "25.0000 SHIT", "m" ]' -p user
 
 ```
+
+**5. Write and deploy the Hello World contract as in [this tutorial](https://github.com/EOSIO/eos/wiki/Tutorial-Hello-World-Contract)** 
