@@ -1,0 +1,1 @@
+/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/test_api.tmp.dir/test_api.cpp.o  -o test_api.tmp 

@@ -1,0 +1,1 @@
+/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/stltest.tmp.dir/stltest.cpp.o  -o stltest.tmp 

@@ -1,0 +1,31 @@
+const char* const test_inline_abi = R"=====(
+{
+  "types": [],
+  "structs": [
+     {
+       "name": "forward",
+       "base": "",
+       "fields": [
+         {"name":"reqauth", "type":"account_name"},
+         {"name":"forward_code", "type":"account_name"},
+         {"name":"forward_auth", "type":"account_name"}
+       ]
+     },
+     {
+      "name": "reqauth",
+      "base": "",
+      "fields": [
+        {"name":"from", "type":"account_name"}
+      ]
+    }],
+  "actions": [{
+      "name": "reqauth",
+      "type": "reqauth"
+    },{
+      "name": "forward",
+      "type": "forward"
+    }
+  ],
+  "tables": []
+}
+)=====";

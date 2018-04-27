@@ -1,0 +1,1 @@
+/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/exchange.tmp.dir/exchange.cpp.o  -o exchange.tmp 
