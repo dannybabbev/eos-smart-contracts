@@ -1,0 +1,282 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "nonce",
+       "base": "",
+       "fields": [
+          {"name":"value", "type":"string"}
+      ]
+    },{
+      "name": "transfer",
+      "base": "",
+      "fields": [
+         {"name":"from", "type":"account_name"},
+         {"name":"to", "type":"account_name"},
+         {"name":"quantity", "type":"asset"},
+         {"name":"memo", "type":"string"}
+      ]
+    },{
+     "name": "issue",
+     "base": "",
+     "fields": [
+        {"name":"to", "type":"account_name"},
+        {"name":"quantity", "type":"asset"}
+     ]
+    },{
+      "name": "account",
+      "base": "",
+      "fields": [
+        {"name":"currency", "type":"uint64"},
+        {"name":"balance", "type":"uint64"}
+      ]
+    },{
+      "name": "currency_stats",
+      "base": "",
+      "fields": [
+        {"name":"currency", "type":"uint64"},
+        {"name":"supply", "type":"uint64"}
+      ]
+    },{
+      "name": "delegatebw",
+      "base": "",
+      "fields": [
+         {"name":"from", "type":"account_name"},
+         {"name":"receiver", "type":"account_name"},
+         {"name":"stake_net_quantity", "type":"asset"},
+         {"name":"stake_cpu_quantity", "type":"asset"},
+         {"name":"stake_storage_quantity", "type":"asset"}
+      ]
+    },{
+      "name": "undelegatebw",
+      "base": "",
+      "fields": [
+         {"name":"from", "type":"account_name"},
+         {"name":"receiver", "type":"account_name"},
+         {"name":"unstake_net_quantity", "type":"asset"},
+         {"name":"unstake_cpu_quantity", "type":"asset"},
+         {"name":"unstake_storage_bytes", "type":"uint64"}
+      ]
+    },{
+      "name": "refund",
+      "base": "",
+      "fields": [
+         {"name":"owner", "type":"account_name"}
+      ]
+    },{
+      "name": "delegated_bandwidth",
+      "base": "",
+      "fields": [
+         {"name":"from", "type":"account_name"},
+         {"name":"to", "type":"account_name"},
+         {"name":"net_weight", "type":"uint64"},
+         {"name":"cpu_weight", "type":"uint64"},
+         {"name":"storage_stake", "type":"uint64"},
+         {"name":"storage_bytes", "type":"uint64"}
+      ]
+    },{
+      "name": "total_resources",
+      "base": "",
+      "fields": [
+         {"name":"owner", "type":"account_name"},
+         {"name":"net_weight", "type":"asset"},
+         {"name":"cpu_weight", "type":"asset"},
+         {"name":"storage_stake", "type":"asset"},
+         {"name":"storage_bytes", "type":"uint64"}
+      ]
+    },{
+      "name": "refund_request",
+      "base": "",
+      "fields": [
+         {"name":"owner", "type":"account_name"},
+         {"name":"request_time", "type":"time"},
+         {"name":"amount", "type":"uint64"}
+      ]
+    },{
+      "name": "blockchain_parameters",
+      "base": "",
+      "fields": [
+         {"name":"base_per_transaction_net_usage", "type":"uint32"},
+         {"name":"base_per_transaction_cpu_usage", "type":"uint32"},
+         {"name":"base_per_action_cpu_usage", "type":"uint32"},
+         {"name":"base_setcode_cpu_usage", "type":"uint32"},
+         {"name":"per_signature_cpu_usage", "type":"uint32"},
+         {"name":"per_lock_net_usage", "type":"uint32"},
+         {"name":"context_free_discount_cpu_usage_num", "type":"uint64"},
+         {"name":"context_free_discount_cpu_usage_den", "type":"uint64"},
+         {"name":"max_transaction_cpu_usage", "type":"uint32"},
+         {"name":"max_transaction_net_usage", "type":"uint32"},
+         {"name":"max_block_cpu_usage", "type": "uint64"},
+         {"name":"target_block_cpu_usage_pct", "type": "uint32"},
+         {"name":"max_block_net_usage", "type": "uint64"},
+         {"name":"target_block_net_usage_pct", "type": "uint32"},
+         {"name":"max_transaction_lifetime", "type":"uint32"},
+         {"name":"max_transaction_exec_time", "type":"uint32"},
+         {"name":"max_authority_depth", "type":"uint16"},
+         {"name":"max_inline_depth", "type":"uint16"},
+         {"name":"max_inline_action_size", "type":"uint32"},
+         {"name":"max_generated_transaction_count", "type":"uint32"},
+         {"name":"max_transaction_delay", "type":"uint32"}
+      ]
+    },{
+      "name": "eosio_parameters",
+      "base": "blockchain_parameters",
+      "fields": [
+         {"name":"max_storage_size", "type":"uint64"},
+         {"name":"percent_of_max_inflation_rate", "type":"uint32"},
+         {"name":"storage_reserve_ratio", "type":"uint32"}
+      ]
+    },{
+      "name": "eosio_global_state",
+      "base": "eosio_parameters",
+      "fields": [
+         {"name":"total_storage_bytes_reserved", "type":"uint64"},
+         {"name":"total_storage_stake", "type":"uint64"},
+         {"name":"payment_per_block", "type":"uint64"}
+      ]
+    },{
+      "name": "producer_info",
+      "base": "",
+      "fields": [
+         {"name":"owner",              "type":"account_name"},
+         {"name":"total_votes",        "type":"uint128"},
+         {"name":"prefs",              "type":"eosio_parameters"},
+         {"name":"packed_key",         "type":"uint8[]"},
+         {"name":"per_block_payments", "type":"uint64"},
+         {"name":"last_claim_time",    "type":"uint32"}
+      ]
+    },{
+      "name": "regproducer",
+      "base": "",
+      "fields": [
+        {"name":"producer",     "type":"account_name"},
+        {"name":"producer_key", "type":"bytes"},
+        {"name":"prefs",        "type":"eosio_parameters"}
+      ]
+    },{
+      "name": "unregprod",
+      "base": "",
+      "fields": [
+        {"name":"producer",     "type":"account_name"}
+      ]
+    },{
+      "name": "regproxy",
+      "base": "",
+      "fields": [
+        {"name":"proxy",     "type":"account_name"}
+      ]
+    },{
+      "name": "unregproxy",
+      "base": "",
+      "fields": [
+        {"name":"proxy",     "type":"account_name"}
+      ]
+    },{
+      "name": "voteproducer",
+      "base": "",
+      "fields": [
+        {"name":"voter",     "type":"account_name"},
+        {"name":"proxy",     "type":"account_name"},
+        {"name":"producers", "type":"account_name[]"}
+      ]
+    },{
+      "name": "voter_info",
+      "base": "",
+      "fields": [
+        {"name":"owner",             "type":"account_name"},
+        {"name":"proxy",             "type":"account_name"},
+        {"name":"last_update",       "type":"uint32"},
+        {"name":"is_proxy",          "type":"uint32"},
+        {"name":"staked",            "type":"asset"},
+        {"name":"unstaking",         "type":"asset"},
+        {"name":"unstake_per_week",  "type":"asset"},
+        {"name":"proxied_votes",     "type":"uint128"},
+        {"name":"producers",         "type":"account_name[]"},
+        {"name":"deferred_trx_id",   "type":"uint32"},
+        {"name":"last_unstake",      "type":"uint32"}
+      ]
+    },{
+      "name": "claimrewards",
+      "base": "",
+      "fields": [
+        {"name":"owner",   "type":"account_name"}
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "transfer",
+      "type": "transfer",
+      "ricardian_contract": ""
+    },{
+      "name": "issue",
+      "type": "issue",
+      "ricardian_contract": ""
+    },{
+      "name": "delegatebw",
+      "type": "delegatebw",
+      "ricardian_contract": ""
+    },{
+      "name": "undelegatebw",
+      "type": "undelegatebw",
+      "ricardian_contract": ""
+    },{
+      "name": "refund",
+      "type": "refund",
+      "ricardian_contract": ""
+    },{
+      "name": "regproducer",
+      "type": "regproducer",
+      "ricardian_contract": ""
+    },{
+      "name": "unregprod",
+      "type": "unregprod",
+      "ricardian_contract": ""
+    },{
+      "name": "regproxy",
+      "type": "regproxy",
+      "ricardian_contract": ""
+    },{
+      "name": "unregproxy",
+      "type": "unregproxy",
+      "ricardian_contract": ""
+    },{
+      "name": "voteproducer",
+      "type": "voteproducer",
+      "ricardian_contract": ""
+    },{
+      "name": "claimrewards",
+      "type": "claimrewards",
+      "ricardian_contract": ""
+    },{
+      "name": "nonce",
+      "type": "nonce",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [{
+      "name": "producerinfo",
+      "type": "producer_info",
+      "index_type": "i64",
+      "key_names" : ["owner"],
+      "key_types" : ["uint64"]
+    },{
+      "name": "totalband",
+      "type": "total_resources",
+      "index_type": "i64",
+      "key_names" : ["owner"],
+      "key_types" : ["uint64"]
+    },{
+      "name": "delband",
+      "type": "delegated_bandwidth",
+      "index_type": "i64",
+      "key_names" : ["to"],
+      "key_types" : ["uint64"]
+    },{
+      "name": "refunds",
+      "type": "refund_request",
+      "index_type": "i64",
+      "key_names" : ["owner"],
+      "key_types" : ["uint64"]
+    }
+  ],
+  "ricardian_clauses": []
+}

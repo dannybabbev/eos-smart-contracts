@@ -8,6 +8,7 @@ class hello : public eosio::contract {
 
       /// @abi action
       void hi( account_name user ) {
+         require_auth(user);
          print( "Hello, ", name{user} );
       }
 };
