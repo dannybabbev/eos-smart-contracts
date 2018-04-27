@@ -4,7 +4,7 @@ Training ground for the EOSIO hackathon in Hong Kong
 
 ## Getting Started
 
-###### 1. Make sure you have the latest version of EOSIO 
+**1. Make sure you have the latest version of EOSIO**
 
 ```
 cd eos
@@ -12,7 +12,7 @@ git fetch --recusrsive
 ./eosio_build.sh
 ```
 
-###### 2. Run the block producer
+**2. Run the block producer**
 
 ```
 cd build/programs/nodeos
@@ -31,9 +31,9 @@ rm -r ~/.local/share/eosio/nodeos/data/shared_mem/
 nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::chain_api_plugin --plugin eosio::account_history_api_plugin 
 ``` 
 
-###### 3. Follow [this tutorial](https://github.com/EOSIO/eos/wiki/Tutorial-Getting-Started-With-Contracts) to set up your local EOSIO account.
+**3. Follow [this tutorial](https://github.com/EOSIO/eos/wiki/Tutorial-Getting-Started-With-Contracts) to set up your local EOSIO account.**
 
-**Make sure to save your wallet pass**
+**Make sure to save your wallet pass!**
 
 It's good to save your public key as an environment variable
 ```
@@ -43,7 +43,7 @@ export pubkey={your-pub-key}
 
 You can save that to .bashrc
 
-###### 4. Deploy a sample token contract
+**4. Deploy a sample token contract**
 
 You can deploy the sample token contract and play around with it 
 
