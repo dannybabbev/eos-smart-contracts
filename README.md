@@ -2,7 +2,7 @@
 
 A training ground for the EOSIO hackathon in Hong Kong
 
-Make sure to understand what you are doing and read the resources before getting started.
+Make sure to understand what you are doing and read the resources before getting started. (Read the resources)[https://github.com/dannybabbev/eos-smart-contracts#resources]
 
 ## Getting Started
 
