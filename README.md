@@ -2,7 +2,7 @@
 
 A training ground for the EOSIO hackathon in Hong Kong
 
-Make sure to understand what you are doing and read the resources before getting started. (Read the resources)[https://github.com/dannybabbev/eos-smart-contracts#resources]
+Make sure to understand what you are doing and read the resources before getting started. [Read the resources](https://github.com/dannybabbev/eos-smart-contracts#resources)
 
 ## Getting Started
 
@@ -82,13 +82,13 @@ cleos push action eosio.token transfer '[ "user", "tester", "25.0000 SHIT", "m" 
 Make sure to know what you're doing before getting into smart contracts development.
 
 **Here are some good resources to get you started:**
-* EOSIO Whitepaper (Chinese)[https://github.com/EOSIO/Documentation/blob/master/zh-CN/TechnicalWhitePaper.md] | (English)[https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md]
+* EOSIO Whitepaper: [Chinese](https://github.com/EOSIO/Documentation/blob/master/zh-CN/TechnicalWhitePaper.md) | [English](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
 
-* (Official Documentation)[https://github.com/EOSIO/eos/wiki]
+* [Official Documentation](https://github.com/EOSIO/eos/wiki)
 
-* Daniel Larimier explains DPoS (Part 1)[https://www.youtube.com/watch?v=Xs1dyZFhIr4], (Part 2)[https://www.youtube.com/watch?v=57hfF4o4-2A]
+* Daniel Larimier explains DPoS [Part 1](https://www.youtube.com/watch?v=Xs1dyZFhIr4), [Part 2](https://www.youtube.com/watch?v=57hfF4o4-2A)
 
-* How data is stored into the EOS blockchain: (Persistence API)[https://github.com/EOSIO/eos/wiki/Persistence-API]
+* How data is stored into the EOS blockchain: [Persistence API](https://github.com/EOSIO/eos/wiki/Persistence-API)
 
 
 **Some of the questions you should be able to answer to yourself:**
