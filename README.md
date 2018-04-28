@@ -83,11 +83,8 @@ Make sure to know what you're doing before getting into smart contracts developm
 
 **Here are some good resources to get you started:**
 * EOSIO Whitepaper: [Chinese](https://github.com/EOSIO/Documentation/blob/master/zh-CN/TechnicalWhitePaper.md) | [English](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
-
 * [Official Documentation](https://github.com/EOSIO/eos/wiki)
-
 * Daniel Larimier explains DPoS [Part 1](https://www.youtube.com/watch?v=Xs1dyZFhIr4), [Part 2](https://www.youtube.com/watch?v=57hfF4o4-2A)
-
 * How data is stored into the EOS blockchain: [Persistence API](https://github.com/EOSIO/eos/wiki/Persistence-API)
 
 
