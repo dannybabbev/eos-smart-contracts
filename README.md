@@ -82,7 +82,7 @@ cleos push action eosio.token transfer '[ "user", "tester", "25.0000 SHIT", "m" 
 Make sure to know what you're doing before getting into smart contracts development.
 
 **Here are some good resources to get you started:**
-* Basics: [How a blockchain works?](https://www.youtube.com/watch?v=bBC-nXj3Ng4) | [256 bit security](https://www.youtube.com/watch?v=S9JGmA5_unY) | [Blockchain - a visual demo](https://www.youtube.com/watch?v=_160oMzblY8) | [How Bitcoin works under the hood] (https://www.youtube.com/watch?v=Lx9zgZCMqXE)
+* Basics: [How a blockchain works?](https://www.youtube.com/watch?v=bBC-nXj3Ng4) | [256 bit security](https://www.youtube.com/watch?v=S9JGmA5_unY) | [Blockchain - a visual demo](https://www.youtube.com/watch?v=_160oMzblY8) | [How Bitcoin works under the hood](https://www.youtube.com/watch?v=Lx9zgZCMqXE)
 * EOSIO Whitepaper: [Chinese](https://github.com/EOSIO/Documentation/blob/master/zh-CN/TechnicalWhitePaper.md) | [English](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
 * [Official Documentation](https://github.com/EOSIO/eos/wiki)
 * Daniel Larimier explains DPoS [Part 1](https://www.youtube.com/watch?v=Xs1dyZFhIr4), [Part 2](https://www.youtube.com/watch?v=57hfF4o4-2A)
