@@ -1,1 +1,0 @@
-/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/asserter.tmp.dir/asserter.cpp.o  -o asserter.tmp 

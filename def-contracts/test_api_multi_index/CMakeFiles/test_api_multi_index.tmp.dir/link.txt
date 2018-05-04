@@ -1,1 +1,0 @@
-/usr/bin/clang++-4.0   -Wall -Wno-invalid-partial-specialization -O3 -DNDEBUG   CMakeFiles/test_api_multi_index.tmp.dir/test_api_multi_index.cpp.o  -o test_api_multi_index.tmp 
