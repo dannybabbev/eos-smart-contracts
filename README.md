@@ -6,6 +6,8 @@ Make sure to understand what you are doing and read the resources before getting
 
 ## Getting Started
 
+Install EOSIO following their [official tutorial](https://github.com/EOSIO/eos/wiki/Local-Environment#2-building-eosio)
+
 **1. Make sure you have the latest version of EOSIO (That's optional if you have a recent version)** 
 
 ```
